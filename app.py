@@ -26,14 +26,14 @@ def input_pdf_text(uploaded_file):
 
 input_prompt="""
 Hey Act Like a skilled or very experience ATS(Application Tracking System)
-with a deep understanding of tech field,software engineering,data science ,data analyst
-and big data engineer. Your task is to evaluate the resume based on the given job description.
-You must consider the job market is very competitive and you should provide 
-best assistance for improving thr resumes. Assign the percentage Matching based 
-on Jd and
+with a deep understanding of tech field, data science, data analyst, machine learning engineer,
+and big data engineer. You must consider the job market is very competitive and you should provide 
+best assistance for improving thr resumes.  Your task is to analyze the resume provided and compare it against the job description to determine the ATS score. Additionally, identify and list any keywords or skills mentioned in the job description that are missing from the resume.
+ Assign the percentage Matching based 
+on job description and
 the missing keywords with high accuracy
 resume:{text}
-description:{jd}
+description:{job description}
 
 I want the response in one single string having the structure
 {{"JD Match":"%","MissingKeywords:[]","Profile Summary":""}}
